@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Bosch';
+    src: url('BoschRegular.woff2') format('woff2'),
+        url('BoschRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 html {
   font-size: 100%;
 }
@@ -6,8 +15,9 @@ html {
   --text-color: rgb(7, 14, 218);
   --background-color: rgb(251, 194, 255);
   --accent-color: rgb(0, 0, 0);
-  --title-font: "varietta-variable", sans-serif;
-  --body-font: "geologica-variable", sans-serif;
+  --font-accent: "bosch", sans-serif;
+  --title-font: "snell-roundhand-lt-std", sans-serif;
+  --body-font: "baloo-bhaina-2", sans-serif;
 }
 
 body {
@@ -16,6 +26,10 @@ body {
   font-family: var(--body-font);
   font-variation-settings: 'wght' 100, 'CRSV' 0, 'SHRP' 0, 'slnt' 0;
   line-height: 1.5em;
+  background-image: url(../img/web-recono-01.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 a {
   text-decoration: underline;
@@ -44,22 +58,26 @@ p, li {
 h1 {
   width: 100%;
 
-  font-family: var(--title-font);
+  font-family: var(--font-accent);
   font-variation-settings: 'CTOP' 100, 'CBOT' 0, 'wdth' 150, 'wght' 900;
   font-size: 8vw;
 }
 
 h2 {
-  font-family: var(--title-font);
+  font-family: var(--font-accent);
   font-variation-settings: 'CTOP' 100, 'CBOT' 0, 'wdth' 100, 'wght' 600;
   font-size: 2.5em;
 }
 
 h3,
 h4 {
-  font-family: var(--title-font);
+  font-family: var(--font-accent);
   font-variation-settings: 'CTOP' 100, 'CBOT' 0, 'wdth' 100, 'wght' 400;
   font-size: 2em;
+}
+
+h1 strong {
+  font-family: var(--title-font);
 }
 
 header {
